@@ -1,0 +1,115 @@
+@import "normalizez.scss"
+@import "resets.scss"
+
+@font-face
+    font-family: "monserrat"
+    src: url("../fonts/Montserrat-Bold.ttf")
+
+$accent: #00B03C
+
+body 
+    font-family: "monserrat"
+    background-color: #1A1A1A
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+    padding: 0px
+    padding-left: 15px
+    padding-right: 15px
+
+.main-section
+    padding-top: 60px
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    
+
+.aside
+    display: flex
+    flex-direction: column
+    min-width: 260px
+    justify-content: space-between
+    &__btn-text
+        margin-left: 12px
+    &__btn
+        max-width: 260px
+        height: 48px
+        background-color: #272727
+        color: white
+        border: none
+        border-radius: 7px
+        margin-bottom: 12px
+        text-align: left
+        font-size: 16px
+        text-decoration: none
+        display: flex
+        align-items: center
+        &:last-child
+            margin-bottom: 0px
+
+.active-btn
+    background-color: $accent
+
+.btn-box
+    display: flex
+    flex-direction: column
+    padding-top: 40px
+    /* margin-bottom: 394px */
+
+.acc-box
+    display: flex
+    flex-direction: column
+    &__first-section
+        display: flex
+        flex-direction: column
+        align-items: center
+        margin-bottom: 20px
+    &__second-section
+        display: flex
+        flex-direction: row
+        align-items: center
+    &__btn
+        width: 40px
+        height: 40px
+        background-color: $accent
+        border-radius: 100px
+        border: none
+        display: flex
+        justify-content: center
+        align-items: center
+    &__img
+        width: 32px
+        height: 32px
+        background-color: #D9D9D9
+        border-radius: 100px
+        margin-right: 12px
+    &__name 
+        color: #ffffff
+    &__title
+        color: #505050
+        margin-bottom: 12px
+
+
+.right-wrapper
+    min-width: 75%
+    min-height: 708px
+    background-color: #272727
+    border-radius: 7px
+    color: #FFFFFF
+    &__title
+        font-size: 48px
+        padding-left: 24px
+        padding-top: 12px
+        margin-bottom: 20px
+    &__name-box
+        margin-left: 24px
+        max-width: 260px
+        height: 48px
+        background-color: #505050
+        border-radius: 7px
+        border: none
+        display: flex
+        align-items: center
+    &__name
+        padding-left: 12px
